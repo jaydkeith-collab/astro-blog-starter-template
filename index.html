@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tillage Health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal: #0F6E56;
+      --teal-light: #E1F5EE;
+      --teal-mid: #1D9E75;
+      --ink: #1a1e1c;
+      --ink-muted: #4a524e;
+      --ink-faint: #8a928d;
+      --border: #dde5e0;
+      --bg: #f8faf9;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .nav-logo {
+      font-family: 'Lora', serif;
+      font-weight: 500;
+      font-size: 1.15rem;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-logo span { color: var(--teal); }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: var(--teal-light);
+      padding: 0.35rem 0.85rem;
+      border-radius: 100px;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+      max-width: 560px;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--teal);
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--ink-muted);
+      font-weight: 300;
+      max-width: 460px;
+      line-height: 1.75;
+      margin-bottom: 3.5rem;
+    }
+
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2.25rem 2.5rem;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .contact-card p {
+      font-size: 0.9375rem;
+      color: var(--ink-muted);
+      font-weight: 300;
+      margin-bottom: 1.25rem;
+      line-height: 1.65;
+    }
+
+    .contact-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--teal);
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      background: var(--teal-light);
+      border-radius: 8px;
+      transition: background 0.2s, color 0.2s;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .contact-email:hover {
+      background: var(--teal);
+      color: var(--white);
+    }
+
+    .contact-email svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    footer {
+      padding: 1.5rem 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--ink-faint);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="nav-logo">Tillage<span>.</span>Health</a>
+  </nav>
+
+  <main>
+    <span class="eyebrow">Coming soon</span>
+    <h1>Reducing sepsis readmissions.<br><em>Full site coming soon.</em></h1>
+    <p class="subtitle">We're building something to help clinical teams keep sepsis patients from coming back. Stay tuned — or reach out to learn more.</p>
+
+    <div class="contact-card">
+      <p>Interested in learning more about Tillage Health? We'd love to hear from you.</p>
+      <a href="mailto:info@tillagehealth.com" class="contact-email">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        info@tillagehealth.com
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <span class="footer-copy">© 2026 Tillage Health, Inc. All rights reserved.</span>
+  </footer>
+
+</body>
+</html>
